@@ -1,6 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
+import { FaGithub, FaTiktok, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import Image from 'next/image';
 import { Github, ExternalLink, Mail, Phone, MapPin, Sun, Moon, Code, Sparkles, ArrowRight, Star, Zap, Layers, Terminal, Cpu, Palette, Database } from 'lucide-react';
 
@@ -11,16 +12,54 @@ const Portfolio = () => {
   const y1 = useTransform(scrollY, [0, 300], [0, -50]);
   const y2 = useTransform(scrollY, [0, 300], [0, -100]);
 
-  const skills = [
-    { name: 'HTML', icon: <Code className="w-6 h-6" />, level: 95 },
-    { name: 'CSS', icon: <Palette className="w-6 h-6" />, level: 92 },
-    { name: 'JavaScript', icon: <Terminal className="w-6 h-6" />, level: 88 },
-    { name: 'React', icon: <Cpu className="w-6 h-6" />, level: 85 },
-    { name: 'Next.js', icon: <Layers className="w-6 h-6" />, level: 82 },
-    { name: 'Tailwind CSS', icon: <Sparkles className="w-6 h-6" />, level: 90 },
-    { name: 'Framer Motion', icon: <Zap className="w-6 h-6" />, level: 80 },
-    { name: 'Python', icon: <Database className="w-6 h-6" />, level: 75 }
-  ];
+ const skills = [
+  {
+    name: 'HTML',
+    icon: <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" className="w-6 h-6" width={40}
+  height={40} />,
+    level: 95,
+  },
+  {
+    name: 'CSS',
+    icon: <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" className="w-6 h-6" width={40}
+  height={40}/>,
+    level: 92,
+  },
+  {
+    name: 'JavaScript',
+    icon: <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" className="w-6 h-6" width={40}
+  height={40}/>,
+    level: 88,
+  },
+  {
+    name: 'React',
+    icon: <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-6 h-6" width={40}
+  height={40}/>,
+    level: 85,
+  },
+  {
+    name: 'Next.js',
+    icon: <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" className="w-6 h-6 invert dark:invert-0" width={40}
+  height={40}/>,
+    level: 82,
+  },
+  {
+    name: 'Tailwind CSS',
+    icon: <Image src="tailwindicon.svg" alt="Tailwind" className="w-6 h-6" width={40} height={40}/>,
+    level: 90,
+  },
+  {
+    name: 'Framer Motion',
+    icon: <Image src="framer-motion.svg" alt="Framer Motion" className="w-6 h-6" width={40} height={40}/>,
+    level: 80,
+  },
+  {
+    name: 'Python',
+    icon: <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" className="w-6 h-6" width={40}   height={40}/>,
+    level: 75,
+  }
+];
+
 
   const projects = [
     {
@@ -53,12 +92,12 @@ const Portfolio = () => {
   ];
 
   const socialLinks = [
-    { name: 'GitHub', icon: <Github />, url: '#', color: 'hover:text-gray-400' },
-    { name: 'TikTok', icon: '🎵', url: '#', color: 'hover:text-pink-400' },
-    { name: 'Facebook', icon: '📘', url: '#', color: 'hover:text-blue-400' },
-    { name: 'Instagram', icon: '📷', url: '#', color: 'hover:text-purple-400' },
-    { name: 'X (Twitter)', icon: '🐦', url: '#', color: 'hover:text-sky-400' }
-  ];
+  { name: 'GitHub', icon: <FaGithub />, url: '#', color: 'hover:text-gray-400' },
+  { name: 'TikTok', icon: <FaTiktok />, url: '#', color: 'hover:text-pink-400' },
+  { name: 'Facebook', icon: <FaFacebook />, url: '#', color: 'hover:text-blue-400' },
+  { name: 'Instagram', icon: <FaInstagram />, url: '#', color: 'hover:text-purple-400' },
+  { name: 'X (Twitter)', icon: <FaTwitter />, url: '#', color: 'hover:text-sky-400' },
+];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -251,8 +290,10 @@ const Portfolio = () => {
             >
               <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full blur-2xl opacity-50"></div>
               <Image
-                src="profile2.jpg"
+                src="/profile2.jpg"
                 alt="Prince Chidera"
+                width={600}
+                height={400}
                 className="relative z-10 w-full h-full object-cover rounded-full border-4 border-white/20"
               />
               <motion.div
@@ -355,6 +396,8 @@ const Portfolio = () => {
                   <Image
                     src={project.image}
                     alt={project.title}
+                    width={600}
+                    height={400}
                     className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -436,7 +479,7 @@ const Portfolio = () => {
                   <Mail className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Email</h3>
-                <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>prince@example.com</p>
+                <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>princechidera1007@gmail.com</p>
               </motion.div>
               
               <motion.div
@@ -447,7 +490,7 @@ const Portfolio = () => {
                   <Phone className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold mb-2">Phone</h3>
-                <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>+234 xxx xxx xxxx</p>
+                <p className={darkMode ? 'text-gray-300' : 'text-gray-600'}>+234 701 896 7250</p>
               </motion.div>
               
               <motion.div
