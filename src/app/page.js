@@ -157,7 +157,7 @@ const Portfolio = () => {
     <div className={`min-h-screen transition-colors duration-500 ${darkMode ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
       <FloatingElements />
       
-      {/* Navigation */}
+      {/* Navigatio */}
       <motion.nav
         className={`fixed top-0 w-full z-50 backdrop-blur-lg ${darkMode ? 'bg-gray-900/80' : 'bg-white/80'} border-b ${darkMode ? 'border-gray-800' : 'border-gray-200'}`}
         initial={{ y: -100 }}
