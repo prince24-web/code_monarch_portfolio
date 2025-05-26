@@ -92,11 +92,11 @@ const Portfolio = () => {
   ];
 
   const socialLinks = [
-  { name: 'GitHub', icon: <FaGithub />, url: '#', color: 'hover:text-gray-400' },
-  { name: 'TikTok', icon: <FaTiktok />, url: '#', color: 'hover:text-pink-400' },
-  { name: 'Facebook', icon: <FaFacebook />, url: '#', color: 'hover:text-blue-400' },
-  { name: 'Instagram', icon: <FaInstagram />, url: '#', color: 'hover:text-purple-400' },
-  { name: 'X (Twitter)', icon: <FaTwitter />, url: '#', color: 'hover:text-sky-400' },
+  { name: 'GitHub', icon: <FaGithub />, url: 'https://github.com/prince24-web', color: 'hover:text-gray-400' },
+  { name: 'TikTok', icon: <FaTiktok />, url: 'https://www.tiktok.com/@code_monarch1?_t=ZM-8wfIFvyM5DS&_r=1', color: 'hover:text-pink-400' },
+  { name: 'Facebook', icon: <FaFacebook />, url: 'https://www.facebook.com/share/1DU9ccryyy/?mibextid=wwXIfr', color: 'hover:text-blue-400' },
+  { name: 'Instagram', icon: <FaInstagram />, url: 'https://www.instagram.com/code_monarch1?igsh=MXlrbW80YTZndjBz&utm_source=qr', color: 'hover:text-purple-400' },
+  { name: 'X (Twitter)', icon: <FaTwitter />, url: 'https://x.com/pceegalaxy?s=21', color: 'hover:text-sky-400' },
 ];
 
   const containerVariants = {
