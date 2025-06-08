@@ -64,28 +64,28 @@ const Portfolio = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution built with Next.js, featuring real-time inventory, payment processing, and admin dashboard.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop',
-      tech: ['Next.js', 'React', 'Tailwind', 'Stripe'],
+      title: 'Preppal',
+      description: 'An AI tool that generate smart summaries, Quiz and flashCards from PDF. ',
+      image: '/preppalIMG.png',
+      tech: ['Next.js','Framer Motion', 'tailwind.css','Gemini'],
       github: '#',
-      live: '#'
+      live: 'https://prep-pal-blond.vercel.app/'
     },
     {
       id: 2,
-      title: 'AI Chat Application',
-      description: 'An intelligent chat application with real-time messaging, AI responses, and beautiful animations.',
-      image: 'https://images.unsplash.com/photo-1587560699334-cc4ff634909a?w=600&h=400&fit=crop',
-      tech: ['React', 'Python', 'WebSocket', 'AI API'],
+      title: 'eTrade',
+      description: 'An online gadget store ',
+      image: '/headset.png',
+      tech: ['Next.js','Framer Motion','tailwind.css'],
       github: '#',
-      live: '#'
+      live: 'https://tech-store-ivory-ten.vercel.app/'
     },
-    {
+     {
       id: 3,
-      title: 'Portfolio Dashboard',
-      description: 'A dynamic dashboard for tracking personal projects, skills progression, and career milestones.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
-      tech: ['Next.js', 'Framer Motion', 'Chart.js'],
+      title: 'BuySocial',
+      description: 'An online socail media market place',
+      image: '/Buysocail.png',
+      tech: ['React','Framer Motion','CSS'],
       github: '#',
       live: '#'
     }
