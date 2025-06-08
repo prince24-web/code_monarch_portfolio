@@ -68,7 +68,7 @@ const Portfolio = () => {
       description: 'An AI tool that generate smart summaries, Quiz and flashCards from PDF. ',
       image: '/preppalIMG.png',
       tech: ['Next.js','Framer Motion', 'tailwind.css','Gemini'],
-      github: '#',
+      github: 'https://github.com/prince24-web/Prep-Pal',
       live: 'https://prep-pal-blond.vercel.app/'
     },
     {
@@ -77,7 +77,7 @@ const Portfolio = () => {
       description: 'An online gadget store ',
       image: '/headset.png',
       tech: ['Next.js','Framer Motion','tailwind.css'],
-      github: '#',
+      github: 'https://github.com/prince24-web/techStore',
       live: 'https://tech-store-ivory-ten.vercel.app/'
     },
      {
@@ -86,8 +86,8 @@ const Portfolio = () => {
       description: 'An online socail media market place',
       image: '/Buysocail.png',
       tech: ['React','Framer Motion','CSS'],
-      github: '#',
-      live: '#'
+      github: 'https://github.com/prince24-web/BuySocial',
+      live: 'https://github.com/prince24-web/BuySocial'
     }
   ];
 
